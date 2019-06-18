@@ -1,0 +1,151 @@
+body
+{
+	font-family: "Arial";
+}
+
+h1
+{
+	background-color:  #555555;
+	color: white;
+}
+
+input[type=text]
+{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button, input[type=button], input[type=submit]
+{
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+table
+{
+    width: 100%;
+    border: 0;
+}
+
+td
+{
+    text-align: center;
+}
+
+td a
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.tamElem
+{
+  width: 5%;
+}
+
+.gpAlcalinos
+{
+  background-color: #3e6489;
+}
+
+.gpLantanidos
+{
+  background-color: #0ca2bd;
+}
+
+.gpMetales
+{
+  background-color: #6fbc8e;
+}
+
+.gpMetaloides
+{
+  background-color: #bc5d2e;
+}
+
+.gpHalogenos
+{
+  background-color: #783f8e;
+}
+
+.gpAlcalinoterreos
+{
+  background-color: #384d48;
+}
+
+.gpActinidos
+{
+  background-color: #FF0099
+}
+
+.gpBloqueP
+{
+  background-color: #2e2e3a;
+}
+
+.gpNoMetales
+{
+  background-color: #721817;
+}
+
+.gpGasesNobles
+{
+  background-color: #e74f4c;
+}
+
+.modal
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content
+{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
