@@ -133,34 +133,34 @@
 						B</a>
 					</td>
 					<td class="tamElem gpNoMetales">
-						<a href="javascript:openModalElement('')" title="Carbono">6<br>
+						<a href="javascript:openModalElement('6')" title="Carbono">6<br>
 						C</a>
 					</td>
 					<td class="tamElem gpNoMetales">
-						<a href="javascript:openModalElement('')" title="Nitrógeno">7<br>
+						<a href="javascript:openModalElement('7')" title="Nitrógeno">7<br>
 						N</a>
 					</td>
 					<td class="tamElem gpNoMetales">
-						<a href="javascript:openModalElement('')" title="Oxígeno">8<br>
+						<a href="javascript:openModalElement('8')" title="Oxígeno">8<br>
 						O</a>
 					</td>
 					<td class="tamElem gpHalogenos">
-						<a href="javascript:openModalElement('')" title="Flúor">9<br>
+						<a href="javascript:openModalElement('9')" title="Flúor">9<br>
 						F</a>
 					</td>
 					<td class="tamElem gpGasesNobles">
-						<a href="javascript:openModalElement('')" title="Neón">10<br>
+						<a href="javascript:openModalElement('10')" title="Neón">10<br>
 						Ne</a>
 					</td>
 				</tr>
 				<tr>
 					<td class="tamElem"><b>3</b></td>
 					<td class="tamElem gpAlcalinos">
-						<a href="javascript:openModalElement('')" title="Sodio">11<br>
+						<a href="javascript:openModalElement('11')" title="Sodio">11<br>
 						Na</a>
 					</td>
 					<td class="tamElem gpAlcalinoterreos">
-						<a href="javascript:openModalElement('')" title="Magnesio">12<br>
+						<a href="javascript:openModalElement('12')" title="Magnesio">12<br>
 						Mg</a>
 					</td>
 					<td class="tamElem"></td>
@@ -174,322 +174,322 @@
 					<td class="tamElem"></td>
 					<td class="tamElem"></td>
 					<td class="tamElem gpBloqueP">
-						<a href="javascript:openModalElement('')" title="Aluminio">13<br>
+						<a href="javascript:openModalElement('13')" title="Aluminio">13<br>
 						Al</a>
 					</td>
 					<td class="tamElem gpMetaloides">
-						<a href="javascript:openModalElement('')" title="Silicio">14<br>
+						<a href="javascript:openModalElement('14')" title="Silicio">14<br>
 						Si</a>
 					</td>
 					<td class="tamElem gpNoMetales">
-						<a href="javascript:openModalElement('')" title="Fósforo">15<br>
+						<a href="javascript:openModalElement('15')" title="Fósforo">15<br>
 						P</a>
 					</td>
 					<td class="tamElem gpNoMetales">
-						<a href="javascript:openModalElement('')" title="Azufre">16<br>
+						<a href="javascript:openModalElement('16')" title="Azufre">16<br>
 						S</a>
 					</td>
 					<td class="tamElem gpHalogenos">
-						<a href="javascript:openModalElement('')" title="Cloro">17<br>
+						<a href="javascript:openModalElement('17')" title="Cloro">17<br>
 						Cl</a>
 					</td>
 					<td class="tamElem gpGasesNobles">
-						<a href="javascript:openModalElement('')" title="Argón">18<br>
+						<a href="javascript:openModalElement('18')" title="Argón">18<br>
 						Ar</a>
 					</td>
 				</tr>
 				<tr>
 					<td class="tamElem"><b>4</b></td>
 					<td class="tamElem gpAlcalinos">
-						19<br>
-						<a href="javascript:openModalElement('')" title="Potasio">K</a>
+						<a href="javascript:openModalElement('19')" title="Potasio">19<br>
+						K</a>
 					</td>
 					<td class="tamElem gpAlcalinoterreos">
-						20<br>
-						<a href="javascript:openModalElement('')" title="Calcio">Ca</a>
+						<a href="javascript:openModalElement('20')" title="Calcio">20<br>
+						Ca</a>
 					</td>
 					<td class="tamElem gpMetales">
-						21<br>
-						<a href="javascript:openModalElement('')" title="Escandio">Sc</a>
+						<a href="javascript:openModalElement('21')" title="Escandio">21<br>
+						Sc</a>
 					</td>
 					<td class="tamElem gpMetales">
-						22<br>
-						<a href="javascript:Contact022()" title="Titanio">Ti</a>
+						<a href="javascript:openModalElement('22')" title="Titanio">22<br>
+						Ti</a>
 					</td>
 					<td class="tamElem gpMetales">
-						23<br>
-						<a href="javascript:openModalElement('')" title="Vanadio">V</a>
+						<a href="javascript:openModalElement('23')" title="Vanadio">23<br>
+						V</a>
 					</td>
 					<td class="tamElem gpMetales">
-						24<br>
-						<a href="javascript:openModalElement('')" title="Cromo">Cr</a>
+						<a href="javascript:openModalElement('24')" title="Cromo">24<br>
+						Cr</a>
 					</td>
 					<td class="tamElem gpMetales">
-						25<br>
-						<a href="javascript:openModalElement('')" title="Manganeso">Mn</a>
+						<a href="javascript:openModalElement('25')" title="Manganeso">25<br>
+						Mn</a>
 					</td>
 					<td class="tamElem gpMetales">
-						26<br>
-						<a href="javascript:openModalElement('')" title="Hierro">Fe</a>
+						<a href="javascript:openModalElement('26')" title="Hierro">26<br>
+						Fe</a>
 					</td>
 					<td class="tamElem gpMetales">
-						27<br>
-						<a href="javascript:openModalElement('')" title="Cobalto">Co</a>
+						<a href="javascript:openModalElement('27')" title="Cobalto">27<br>
+						Co</a>
 					</td>
 					<td class="tamElem gpMetales">
-						28<br>
-						<a href="javascript:openModalElement('')" title="Níquel">Ni</a>
+						<a href="javascript:openModalElement('28')" title="Níquel">28<br>
+						Ni</a>
 					</td>
 					<td class="tamElem gpMetales">
-						29<br>
-						<a href="javascript:openModalElement('')" title="Cobre">Cu</a>
+						<a href="javascript:openModalElement('29')" title="Cobre">29<br>
+						Cu</a>
 					</td>
 					<td class="tamElem gpMetales">
-						30<br>
-						<a href="javascript:openModalElement('')" title="Zinc">Zn</a>
+						<a href="javascript:openModalElement('30')" title="Zinc">30<br>
+						Zn</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						31<br>
-						<a href="javascript:openModalElement('')" title="Galio">Ga</a>
+						<a href="javascript:openModalElement('31')" title="Galio">31<br>
+						Ga</a>
 					</td>
 					<td class="tamElem gpMetaloides">
-						32<br>
-						<a href="javascript:openModalElement('')" title="Germanio">Ge</a>
+						<a href="javascript:openModalElement('32')" title="Germanio">32<br>
+						Ge</a>
 					</td>
 					<td class="tamElem gpMetaloides">
-						33<br>
-						<a href="javascript:openModalElement('')" title="Arsénico">As</a>
+						<a href="javascript:openModalElement('33')" title="Arsénico">33<br>
+						As</a>
 					</td>
 					<td class="tamElem gpNoMetales">
-						34<br>
-						<a href="javascript:openModalElement('')" title="Selenio">Se</a>
+						<a href="javascript:openModalElement('34')" title="Selenio">34<br>
+						Se</a>
 					</td>
 					<td class="tamElem gpHalogenos">
-						35<br>
-						<a href="javascript:openModalElement('')" title="Bromo">Br</a>
+						<a href="javascript:openModalElement('35')" title="Bromo">35<br>
+						Br</a>
 					</td>
 					<td class="tamElem gpGasesNobles">
-						36<br>
-						<a href="javascript:openModalElement('')" title="Kriptón">Kr</a>
+						<a href="javascript:openModalElement('36')" title="Kriptón">36<br>
+						Kr</a>
 					</td>
 				</tr>
 				<tr>
 					<td class="tamElem"><b>5</b></td>
 					<td class="tamElem gpAlcalinos">
-						37<br>
-						<a href="javascript:openModalElement('')" title="Rubidio">Rb</a>
+						<a href="javascript:openModalElement('37')" title="Rubidio">37<br>
+						Rb</a>
 					</td>
 					<td class="tamElem gpAlcalinoterreos">
-						38<br>
-						<a href="javascript:openModalElement('')" title="Estroncio">Sr</a>
+						<a href="javascript:openModalElement('38')" title="Estroncio">38<br>
+						Sr</a>
 					</td>
 					<td class="tamElem gpMetales">
-						39<br>
-						<a href="javascript:openModalElement('')" title="Itrio">Y</a>
+						<a href="javascript:openModalElement('39')" title="Itrio">39<br>
+						Y</a>
 					</td>
 					<td class="tamElem gpMetales">
-						40<br>
-						<a href="javascript:openModalElement('')" title="Circonio">Zr</a>
+						<a href="javascript:openModalElement('40')" title="Circonio">40<br>
+						Zr</a>
 					</td>
 					<td class="tamElem gpMetales">
-						41<br>
-						<a href="javascript:openModalElement('')" title="Niobio">Nb</a>
+						<a href="javascript:openModalElement('41')" title="Niobio">41<br>
+						Nb</a>
 					</td>
 					<td class="tamElem gpMetales">
-						42<br>
-						<a href="javascript:openModalElement('')" title="Molibdeno">Mo</a>
+						<a href="javascript:openModalElement('42')" title="Molibdeno">42<br>
+						Mo</a>
 					</td>
 					<td class="tamElem gpMetales">
-						43<br>
-						<a href="javascript:openModalElement('')" title="Tecnecio">Tc</a>
+						<a href="javascript:openModalElement('43')" title="Tecnecio">43<br>
+						Tc</a>
 					</td>
 					<td class="tamElem gpMetales">
-						44<br>
-						<a href="javascript:openModalElement('')" title="Rutenio">Ru</a>
+						<a href="javascript:openModalElement('44')" title="Rutenio">44<br>
+						Ru</a>
 					</td>
 					<td class="tamElem gpMetales">
-						45<br>
-						<a href="javascript:openModalElement('')" title="Rodio">Rh</a>
+						<a href="javascript:openModalElement('45')" title="Rodio">45<br>
+						Rh</a>
 					</td>
 					<td class="tamElem gpMetales">
-						46<br>
-						<a href="javascript:openModalElement('')" title="Paladio">Pd</a>
+						<a href="javascript:openModalElement('46')" title="Paladio">46<br>
+						Pd</a>
 					</td>
 					<td class="tamElem gpMetales">
-						47<br>
-						<a href="javascript:openModalElement('')" title="Plata">Ag</a>
+						<a href="javascript:openModalElement('47')" title="Plata">47<br>
+						Ag</a>
 					</td>
 					<td class="tamElem gpMetales">
-						48<br>
-						<a href="javascript:openModalElement('')" title="Cadmio">Cd</a>
+						<a href="javascript:openModalElement('48')" title="Cadmio">48<br>
+						Cd</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						49<br>
-						<a href="javascript:openModalElement('')" title="Indio">In</a>
+						<a href="javascript:openModalElement('49')" title="Indio">49<br>
+						In</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						50<br>
-						<a href="javascript:openModalElement('')" title="Estaño">Sn</a>
+						<a href="javascript:openModalElement('50')" title="Estaño">50<br>
+						Sn</a>
 					</td>
 					<td class="tamElem gpMetaloides">
-						51<br>
-						<a href="javascript:openModalElement('')" title="Antimonio">Sb</a>
+						<a href="javascript:openModalElement('51')" title="Antimonio">51<br>
+						Sb</a>
 					</td>
 					<td class="tamElem gpMetaloides">
-						52<br>
-						<a href="javascript:openModalElement('')" title="Telurio">Te</a>
+						<a href="javascript:openModalElement('52')" title="Telurio">52<br>
+						Te</a>
 					</td>
 					<td class="tamElem gpHalogenos">
-						53<br>
-						<a href="javascript:openModalElement('')" title="Yodo">I</a>
+						<a href="javascript:openModalElement('53')" title="Yodo">53<br>
+						I</a>
 					</td>
 					<td class="tamElem gpGasesNobles">
-						54<br>
-						<a href="javascript:openModalElement('')" title="Xenón">Xe</a>
+						<a href="javascript:openModalElement('54')" title="Xenón">54<br>
+						Xe</a>
 					</td>
 				</tr>
 				<tr>
 					<td class="tamElem"><b>6</b></td>
 					<td class="tamElem gpAlcalinos">
-						55<br>
-						<a href="javascript:openModalElement('')" title="Cesio">Cs</a>
+						<a href="javascript:openModalElement('55')" title="Cesio">55<br>
+						Cs</a>
 					</td>
 					<td class="tamElem gpAlcalinoterreos">
-						56<br>
-						<a href="javascript:openModalElement('')" title="Bario">Ba</a>
+						<a href="javascript:openModalElement('56')" title="Bario">56<br>
+						Ba</a>
 					</td>
 					<td class="tamElem gpLantanidos">•</td>
 					<td class="tamElem gpMetales">
-						72<br>
-						<a href="javascript:openModalElement('')" title="Hafnio">Hf</a>
+						<a href="javascript:openModalElement('72')" title="Hafnio">72<br>
+						Hf</a>
 					</td>
 					<td class="tamElem gpMetales">
-						73<br>
-						<a href="javascript:openModalElement('')" title="Tántalio">Ta</a>
+						<a href="javascript:openModalElement('73')" title="Tántalio">73<br>
+						Ta</a>
 					</td>
 					<td class="tamElem gpMetales">
-						74<br>
-						<a href="javascript:openModalElement('')" title="Wolframio">W</a>
+						<a href="javascript:openModalElement('74')" title="Wolframio">74<br>
+						W</a>
 					</td>
 					<td class="tamElem gpMetales">
-						75<br>
-						<a href="javascript:openModalElement('')" title="Renio">Re</a>
+						<a href="javascript:openModalElement('75')" title="Renio">75<br>
+						Re</a>
 					</td>
 					<td class="tamElem gpMetales">
-						76<br>
-						<a href="javascript:openModalElement('')" title="Osmio">Os</a>
+						<a href="javascript:openModalElement('76')" title="Osmio">76<br>
+						Os</a>
 					</td>
 					<td class="tamElem gpMetales">
-						77<br>
-						<a href="javascript:openModalElement('')" title="Iridio">Ir</a>
+						<a href="javascript:openModalElement('77')" title="Iridio">77<br>
+						Ir</a>
 					</td>
 					<td class="tamElem gpMetales">
-						78<br>
-						<a href="javascript:openModalElement('')" title="Platino">Pt</a>
+						<a href="javascript:openModalElement('78')" title="Platino">78<br>
+						Pt</a>
 					</td>
 					<td class="tamElem gpMetales">
-						79<br>
-						<a href="javascript:openModalElement('')" title="Oro">Au</a>
+						<a href="javascript:openModalElement('79')" title="Oro">79<br>
+						Au</a>
 					</td>
 					<td class="tamElem gpMetales">
-						80<br>
-						<a href="javascript:openModalElement('')" title="Mercurio">Hg</a>
+						<a href="javascript:openModalElement('80')" title="Mercurio">80<br>
+						Hg</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						81<br>
-						<a href="javascript:openModalElement('')" title="Talio">Tl</a>
+						<a href="javascript:openModalElement('81')" title="Talio">81<br>
+						Tl</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						82<br>
-						<a href="javascript:openModalElement('')" title="Plomo">Pb</a>
+						<a href="javascript:openModalElement('82')" title="Plomo">82<br>
+						Pb</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						83<br>
-						<a href="javascript:openModalElement('')" title="Bismuto">Bi</a>
+						<a href="javascript:openModalElement('83')" title="Bismuto">83<br>
+						Bi</a>
 					</td>
 					<td class="tamElem gpMetaloides">
-						84<br>
-						<a href="javascript:openModalElement('')" title="Polonio">Po</a>
+						<a href="javascript:openModalElement('84')" title="Polonio">84<br>
+						Po</a>
 					</td>
 					<td class="tamElem gpHalogenos">
-						85<br>
-						<a href="javascript:openModalElement('')" title="Astato">At</a>
+						<a href="javascript:openModalElement('85')" title="Astato">85<br>
+						At</a>
 					</td>
 					<td class="tamElem gpGasesNobles">
-						86<br>
-						<a href="javascript:openModalElement('')" title="Radón">Rn</a>
+						<a href="javascript:openModalElement('86')" title="Radón">86<br>
+						Rn</a>
 					</td>
 				</tr>
 				<tr>
 					<td class="tamElem"><b>7</b></td>
 					<td class="tamElem gpAlcalinos">
-						87<br>
-						<a href="javascript:openModalElement('')" title="Francio">Fr</a>
+						<a href="javascript:openModalElement('87')" title="Francio">87<br>
+						Fr</a>
 					</td>
 					<td class="tamElem gpAlcalinoterreos">
-						88<br>
-						<a href="javascript:openModalElement('')" title="Radio">Ra</a>
+						<a href="javascript:openModalElement('88')" title="Radio">88<br>
+						Ra</a>
 					</td>
 					<td class="tamElem gpActinidos">••</td>
 					<td class="tamElem gpMetales">
-						104<br>
-						<a href="javascript:openModalElement('')" title="Unnilquadio">Unq</a>
+						<a href="javascript:openModalElement('104')" title="Unnilquadio">104<br>
+						Unq</a>
 					</td>
 					<td class="tamElem gpMetales">
-						105<br>
-						<a href="javascript:openModalElement('')" title="Unnilpentio">Unp</a>
+						<a href="javascript:openModalElement('105')" title="Unnilpentio">105<br>
+						Unp</a>
 					</td>
 					<td class="tamElem gpMetales">
-						106<br>
-						<a href="javascript:openModalElement('')" title="Unnilhexio">Unh</a>
+						<a href="javascript:openModalElement('106')" title="Unnilhexio">106<br>
+						Unh</a>
 					</td>
 					<td class="tamElem gpMetales">
-						107<br>
-						<a href="javascript:openModalElement('')" title="Unnilsepto">Uns</a>
+						<a href="javascript:openModalElement('107')" title="Unnilsepto">107<br>
+						Uns</a>
 					</td>
 					<td class="tamElem gpMetales">
-						108<br>
-						<a href="javascript:openModalElement('')" title="Unniloctio">Uno</a>
+						<a href="javascript:openModalElement('108')" title="Unniloctio">108<br>
+						Uno</a>
 					</td>
 					<td class="tamElem gpMetales">
-						109<br>
-						<a href="javascript:openModalElement('')" title="Unnilenio">Une</a>
+						<a href="javascript:openModalElement('109')" title="Unnilenio">109<br>
+						Une</a>
 					</td>
 					<td class="tamElem gpMetales">
-						110<br>
-						<a href="javascript:openModalElement('')" title="Ununnilium">Uun</a>
+						<a href="javascript:openModalElement('110')" title="Ununnilium">110<br>
+						Uun</a>
 					</td>
 					<td class="tamElem gpMetales">
-						111<br>
-						<a href="javascript:openModalElement('')" title="Unununium">Uuu</a>
+						<a href="javascript:openModalElement('111')" title="Unununium">111<br>
+						Uuu</a>
 					</td>
 					<td class="tamElem gpMetales">
-						112<br>
-						<a href="javascript:openModalElement('')" title="Ununbium">Uub</a>
+						<a href="javascript:openModalElement('112')" title="Ununbium">112<br>
+						Uub</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						113<br>
-						<a href="javascript:openModalElement('')" title="Ununtrium">Uut</a>
+						<a href="javascript:openModalElement('113')" title="Ununtrium">113<br>
+						Uut</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						114<br>
-						<a href="javascript:openModalElement('')" title="Ununquedium">Uuq</a>
+						<a href="javascript:openModalElement('114')" title="Ununquedium">114<br>
+						Uuq</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						115<br>
-						<a href="javascript:openModalElement('')" title="Ununpentium">Uup</a>
+						<a href="javascript:openModalElement('115')" title="Ununpentium">115<br>
+						Uup</a>
 					</td>
 					<td class="tamElem gpBloqueP">
-						116<br>
-						<a href="javascript:openModalElement('')" title="Ununhexium">Uuh</a>
+						<a href="javascript:openModalElement('116')" title="Ununhexium">116<br>
+						Uuh</a>
 					</td>
 					<td class="tamElem gpHalogenos">
-						117<br>
-						<a href="javascript:openModalElement('')" title="Ununseptium">Uus</a>
+						<a href="javascript:openModalElement('117')" title="Ununseptium">117<br>
+						Uus</a>
 					</td>
 					<td class="tamElem gpGasesNobles">
-						118<br>
-						<a href="javascript:openModalElement('')" title="Ununoctium">Uuo</a>
+						<a href="javascript:openModalElement('118')" title="Ununoctium">118<br>
+						Uuo</a>
 					</td>
 				</tr>
 			</tbody>
@@ -501,64 +501,64 @@
 					<td width="16%"><b>Lantánidos</b></td>
 					<td width="2%">•</td>
 					<td class="tamElem gpLantanidos">
-						57<br>
-						<a href="javascript:openModalElement('')" title="Lantano">La</a>
+						<a href="javascript:openModalElement('57')" title="Lantano">57<br>
+						La</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						58<br>
-						<a href="javascript:openModalElement('')" title="Cerio">Ce</a>
+						<a href="javascript:openModalElement('58')" title="Cerio">58<br>
+						Ce</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						59<br>
-						<a href="javascript:openModalElement('')" title="Praseodimio">Pr</a>
+						<a href="javascript:openModalElement('59')" title="Praseodimio">59<br>
+						Pr</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						60<br>
-						<a href="javascript:openModalElement('')" title="Neodimio">Nd</a>
+						<a href="javascript:openModalElement('60')" title="Neodimio">60<br>
+						Nd</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						61<br>
-						<a href="javascript:openModalElement('')" title="Prometio">Pm</a>
+						<a href="javascript:openModalElement('61')" title="Prometio">61<br>
+						Pm</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						62<br>
-						<a href="javascript:openModalElement('')" title="Samario">Sm</a>
+						<a href="javascript:openModalElement('62')" title="Samario">62<br>
+						Sm</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						63<br>
-						<a href="javascript:openModalElement('')" title="Europio">Eu</a>
+						<a href="javascript:openModalElement('63')" title="Europio">63<br>
+						Eu</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						64<br>
-						<a href="javascript:openModalElement('')" title="Gadolinio">Gd</a>
+						<a href="javascript:openModalElement('64')" title="Gadolinio">64<br>
+						Gd</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						65<br>
-						<a href="javascript:openModalElement('')" title="Terbio">Tb</a>
+						<a href="javascript:openModalElement('65')" title="Terbio">65<br>
+						Tb</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						66<br>
-						<a href="javascript:openModalElement('')" title="Disprosio">Dy</a>
+						<a href="javascript:openModalElement('66')" title="Disprosio">66<br>
+						Dy</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						67<br>
-						<a href="javascript:openModalElement('')" title="Holmio">Ho</a>
+						<a href="javascript:openModalElement('67')" title="Holmio">67<br>
+						Ho</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						68<br>
-						<a href="javascript:openModalElement('')" title="Erbio">Er</a>
+						<a href="javascript:openModalElement('68')" title="Erbio">68<br>
+						Er</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						69<br>
-						<a href="javascript:openModalElement('')" title="Tulio">Tm</a>
+						<a href="javascript:openModalElement('69')" title="Tulio">69<br>
+						Tm</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						70<br>
-						<a href="javascript:openModalElement('')" title="Iterbio">Yb</a>
+						<a href="javascript:openModalElement('70')" title="Iterbio">70<br>
+						Yb</a>
 					</td>
 					<td class="tamElem gpLantanidos">
-						71<br>
-						<a href="javascript:openModalElement('')" title="Lutecio">Lu</a>
+						<a href="javascript:openModalElement('71')" title="Lutecio">71<br>
+						Lu</a>
 					</td>
 					<td class="tamElem"></td>
 				</tr>
@@ -566,64 +566,64 @@
 					<td width="16%"><b>Actínidos</b></td>
 					<td width="2%">••</td>
 					<td class="tamElem gpActinidos">
-						89<br>
-						<a href="javascript:openModalElement('')" title="Actinio">Ac</a>
+						<a href="javascript:openModalElement('89')" title="Actinio">89<br>
+						Ac</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						90<br>
-						<a href="javascript:openModalElement('')" title="Torio">Th</a>
+						<a href="javascript:openModalElement('90')" title="Torio">90<br>
+						Th</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						91<br>
-						<a href="javascript:openModalElement('')" title="Protactinio">Pa</a>
+						<a href="javascript:openModalElement('91')" title="Protactinio">91<br>
+						Pa</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						92<br>
-						<a href="javascript:openModalElement('')" title="Uranio">U</a>
+						<a href="javascript:openModalElement('92')" title="Uranio">92<br>
+						U</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						93<br>
-						<a href="javascript:openModalElement('')" title="Neptunio">Np</a>
+						<a href="javascript:openModalElement('93')" title="Neptunio">93<br>
+						Np</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						94<br>
-						<a href="javascript:openModalElement('')" title="Plutonio">Pu</a>
+						<a href="javascript:openModalElement('94')" title="Plutonio">94<br>
+						Pu</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						95<br>
-						<a href="javascript:openModalElement('')" title="Americio">Am</a>
+						<a href="javascript:openModalElement('95')" title="Americio">95<br>
+						Am</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						96<br>
-						<a href="javascript:openModalElement('')" title="Curio">Cm</a>
+						<a href="javascript:openModalElement('96')" title="Curio">96<br>
+						Cm</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						97<br>
-						<a href="javascript:openModalElement('')" title="Berkelio">Bk</a>
+						<a href="javascript:openModalElement('97')" title="Berkelio">97<br>
+						Bk</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						98<br>
-						<a href="javascript:openModalElement('')" title="Californio">Cf</a>
+						<a href="javascript:openModalElement('98')" title="Californio">98<br>
+						Cf</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						99<br>
-						<a href="javascript:openModalElement('')" title="Einstenio">Es</a>
+						<a href="javascript:openModalElement('99')" title="Einstenio">99<br>
+						Es</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						100<br>
-						<a href="javascript:openModalElement('')" title="Fermio">Fm</a>
+						<a href="javascript:openModalElement('100')" title="Fermio">100<br>
+						Fm</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						101<br>
-						<a href="javascript:openModalElement('')" title="Mendelevio">Md</a>
+						<a href="javascript:openModalElement('101')" title="Mendelevio">101<br>
+						Md</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						102<br>
-						<a href="javascript:openModalElement('')" title="Nobelio">No</a>
+						<a href="javascript:openModalElement('102')" title="Nobelio">102<br>
+						No</a>
 					</td>
 					<td class="tamElem gpActinidos">
-						103<br>
-						<a href="javascript:openModalElement('')" title="Laurencio">Lr</a>
+						<a href="javascript:openModalElement('103')" title="Laurencio">103<br>
+						Lr</a>
 					</td>
 					<td class="tamElem"></td>
 				</tr>
