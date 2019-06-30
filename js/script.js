@@ -1,8 +1,7 @@
 var modal = document.getElementById("element");
 
 (function () {
-  console.log('Esta función no tiene nombre y\
-    se ejecutara inmediatamente');
+  console.log('Función inicial');
 }());
 
 window.onclick = function(event)

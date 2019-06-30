@@ -6,67 +6,20 @@ window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.ms
 if (!window.indexedDB) {
 	window.alert("Tu navegador no soporta una versión estable de IndexedDB.")
 }
-const elementos = [{
-	id: "1",
-	numero: "1",
-	nombre: "Hidrógeno",
-	simbolo: "H",
-	masaAtomica: "1.007",
-	valencia: "1",
-	ebullicion: "",
-	fusion: "",
-	densidad: "",
-	confElectronica: "",
-	grupo: "Metales Alcalinos",
-	descubrimiento: "01-01-1800",
-	descubridor: "",
-	etimologia: ""
-}, {
-	id: "2",
-	numero: "2",
-	nombre: "Helio",
-	simbolo: "He",
-	masaAtomica: "0.0",
-	valencia: "1",
-	ebullicion: "",
-	fusion: "",
-	densidad: "",
-	confElectronica: "",
-	grupo: "Gases Nobles",
-	descubrimiento: "01-01-1800",
-	descubridor: "",
-	etimologia: ""
-}, {
-	id: "3",
-	numero: "3",
-	nombre: "Litio",
-	simbolo: "Li",
-	masaAtomica: "6.941",
-	valencia: "1",
-	ebullicion: "1330 °C",
-	fusion: "186 °C",
-	densidad: "0.53 g/ml",
-	confElectronica: "1s<sup>2</sup>2s<sup>1</sup>",
-	grupo: "Metales Alcalinos",
-	descubrimiento: "01-01-1817",
-	descubridor: "Johann A. Arfvedson",
-	etimologia: "Del griego 'lithos', piedra"
-}, {
-	id: "4",
-	numero: "4",
-	nombre: "Berilio",
-	simbolo: "Be",
-	masaAtomica: "9.0122",
-	valencia: "2",
-	ebullicion: "2770 °C",
-	fusion: "1277 °C",
-	densidad: "1.85 g/ml",
-	confElectronica: "1s<sup>2</sup>2s<sup>2</sup>",
-	grupo: "Metales Alcalinos",
-	descubrimiento: "01-01-1797",
-	descubridor: "Louis Nicolas Vauquelin (aislado por Friedrich Wöhler y Antoine Alexandre Brutus Bussy en 1828)",
-	etimologia: "Del griego 'berylos', berilio, una de las principales menas de berilio"
-}, ];
+
+var elementos = [];
+var xmlhttp = new XMLHttpRequest();
+var url = "js/elements.json";
+
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    elementos = JSON.parse(this.responseText);
+  }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.setRequestHeader("Content-type", "application/json");
+xmlhttp.send();
+
 var db;
 var request = window.indexedDB.open("TablaPeriodica", 1);
 request.onerror = function(event) {
