@@ -7,6 +7,10 @@ if (!window.indexedDB) {
 	window.alert("Tu navegador no soporta una versión estable de IndexedDB.")
 }
 
+DBNAME = "TablaPeriodica";
+STORE = "elementos";
+VERSION = 1;
+
 var elementos = [];
 var xmlhttp = new XMLHttpRequest();
 var url = "js/elements.json";
@@ -21,7 +25,8 @@ xmlhttp.setRequestHeader("Content-type", "application/json");
 xmlhttp.send();
 
 var db;
-var request = window.indexedDB.open("TablaPeriodica", 1);
+var request = window.indexedDB.open(DBNAME, VERSION);
+console.log(request);
 request.onerror = function(event) {
 	console.log("Error: " + event);
 };
@@ -31,7 +36,7 @@ request.onsuccess = function(event) {
 };
 request.onupgradeneeded = function(event) {
 	var db = event.target.result;
-	var objectStore = db.createObjectStore("elementos", {
+	var objectStore = db.createObjectStore(STORE, {
 		keyPath: "id"
 	});
 	for (var i in elementos) {
@@ -55,7 +60,7 @@ function add()
 }
 */
 function add(_numero, _nombre, _simbolo, _masaAtomica, _valencia, _ebullicion, _fusion, _densidad, _confElectronica, _grupo, _descubrimiento, _descubridor, _etimologia) {
-	var request = db.transaction(["elementos"], "readwrite").objectStore("elementos").add({
+	var request = db.transaction([STORE], "readwrite").objectStore(STORE).add({
 		id: _numero.toString(),
 		numero: _numero.toString(),
 		nombre: _nombre.toString(),
@@ -80,8 +85,8 @@ function add(_numero, _nombre, _simbolo, _masaAtomica, _valencia, _ebullicion, _
 }
 
 function read(id) {
-	var transaction = db.transaction(["elementos"]);
-	var objectStore = transaction.objectStore("elementos");
+	var transaction = db.transaction([STORE]);
+	var objectStore = transaction.objectStore(STORE);
 	var request = objectStore.get(id);
 	request.onerror = function(event) {
 		alert("¡No hay ningún elemento registrado!");
@@ -115,7 +120,7 @@ function read(id) {
 }
 
 function readAll() {
-	var objectStore = db.transaction("elementos").objectStore("elementos");
+	var objectStore = db.transaction(STORE).objectStore(STORE);
 	//Solo cuenta el número de elementos
 	var countRequest = objectStore.count();
 	countRequest.onsuccess = function() {
@@ -136,7 +141,7 @@ function readAll() {
 }
 
 function remove(id) {
-	var request = db.transaction(["elementos"], "readwrite").objectStore("elementos").delete(id);
+	var request = db.transaction([STORE], "readwrite").objectStore(STORE).delete(id);
 	request.onsuccess = function(event) {
 		alert("¡El elemento ha sido eliminado de la base de datos!");
 	}
