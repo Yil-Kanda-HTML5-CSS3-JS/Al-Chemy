@@ -58,4 +58,19 @@
 	"descubrimiento": "01-01-1797",
 	"descubridor": "Louis Nicolas Vauquelin (aislado por Friedrich Wöhler y Antoine Alexandre Brutus Bussy en 1828)",
 	"etimologia": "Del griego 'berylos', berilio, una de las principales menas de berilio"
+}, {
+	"id": "5",
+	"numero": "5",
+	"nombre": "Boro",
+	"simbolo": "B",
+	"masaAtomica": "",
+	"valencia": "",
+	"ebullicion": "",
+	"fusion": "",
+	"densidad": "",
+	"confElectronica": "1s<sup>2</sup>2s<sup>2</sup>2p<sup>1</sup>",
+	"grupo": "Metales Alcalinos",
+	"descubrimiento": "01-01-1797",
+	"descubridor": "Louis Nicolas Vauquelin (aislado por Friedrich Wöhler y Antoine Alexandre Brutus Bussy en 1828)",
+	"etimologia": "Del griego 'berylos', berilio, una de las principales menas de berilio"
 }]
