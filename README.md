@@ -7,6 +7,9 @@ Así mismo, el proyecto pretende ser una herramienta para el docente para poder 
 ## Herramientas de Desarrollo
 Actualmente se está utilizando HTML5, CSS3 y JS puros. La utilización de frameworks aún no se implementa. Esperamos pronto contar con la implementación de AngularJS en el backend y Bootstrap en el Frontend.
 
+## Ejecutar el proyecto
+Ejecutarlo en Chrome, a trav
+
 ## Contribuciones
 Las aportaciones son bienvenidas. Para cambios importantes, abra primero un issue para discutir qué le gustaría cambiar.
 
