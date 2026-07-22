@@ -1,151 +1,103 @@
-//prefixes of implementation that we want to test
-window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
-//prefixes of window.IDB objects
-window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
-window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
-if (!window.indexedDB) {
-	window.alert("Tu navegador no soporta una versión estable de IndexedDB.")
-}
+// db.js — versión compatible Chrome + Firefox
+(function () {
+  "use strict";
 
-DBNAME = "TablaPeriodica";
-STORE = "elementos";
-VERSION = 1;
-
-var elementos = [];
-var xmlhttp = new XMLHttpRequest();
-var url = "js/elements.json";
-
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    elementos = JSON.parse(this.responseText);
+  // Firefox en modo privado bloquea IndexedDB (indexedDB existe pero .open lanza SecurityError o dispara onerror).
+  var idb = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+  if (!idb) {
+    console.error("IndexedDB no disponible.");
+    return;
   }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.setRequestHeader("Content-type", "application/json");
-xmlhttp.send();
 
-var db;
-var request = window.indexedDB.open(DBNAME, VERSION);
-console.log(request);
-request.onerror = function(event) {
-	console.log("Error: " + event);
-};
-request.onsuccess = function(event) {
-	db = request.result;
-	console.log("Success: " + db);
-};
-request.onupgradeneeded = function(event) {
-	var db = event.target.result;
-	var objectStore = db.createObjectStore(STORE, {
-		keyPath: "id"
-	});
-	for (var i in elementos) {
-		objectStore.add(elementos[i]);
-	}
-}
-/*
-function add()
-{
-	var request = db.transaction(["elementos"], "readwrite")
-	.objectStore("elementos")
-	.add({});
-	request.onsuccess = function(event)
-	{
-		alert("Berilio Ha sido agregado a la base de datos.");
-	};
-	request.onerror = function(event)
-	{
-		alert("No se puede agregar el valor a la base de datos\r\nBerilio ya existe en la base de datos ");
-	}
-}
-*/
-function add(_numero, _nombre, _simbolo, _masaAtomica, _valencia, _ebullicion, _fusion, _densidad, _confElectronica, _grupo, _descubrimiento, _descubridor, _etimologia) {
-	var request = db.transaction([STORE], "readwrite").objectStore(STORE).add({
-		id: _numero.toString(),
-		numero: _numero.toString(),
-		nombre: _nombre.toString(),
-		simbolo: _simbolo.toString(),
-		masaAtomica: _masaAtomica.toString(),
-		valencia: _valencia.toString(),
-		ebullicion: _ebullicion.toString(),
-		fusion: _fusion.toString(),
-		densidad: _densidad.toString(),
-		confElectronica: _confElectronica.toString(),
-		grupo: _grupo.toString(),
-		descubrimiento: _descubrimiento.toString(),
-		descubridor: _descubridor.toString(),
-		etimologia: _etimologia.toString()
-	});
-	request.onsuccess = function(event) {
-		alert("El elemento ha sido agregado a la base de datos.");
-	};
-	request.onerror = function(event) {
-		alert("No se puede agregar el elemento a la base de datos\r\nYa existe en la base de datos ");
-	}
-}
+  var DBNAME  = "TablaPeriodica";
+  var STORE   = "elementos";
+  var VERSION = 2; // súbelo cuando cambies el esquema
 
-function read(id) {
-	var transaction = db.transaction([STORE]);
-	var objectStore = transaction.objectStore(STORE);
-	var request = objectStore.get(id);
-	request.onerror = function(event) {
-		alert("¡No hay ningún elemento registrado!");
-	};
-	request.onsuccess = function(event) {
-		// Do something with the request.result!
-		if (request.result) {
-			//alert("Numero: " + request.result.numero + ", Nombre: " + request.result.nombre + ", Simbolo: " + request.result.simbolo);
-			var html = '';
-			html += '<h1>' + request.result.numero + ' ' + request.result.nombre + ' ' + (request.result.simbolo) + '</h1>';
-			html += '<p>';
-			html += '<strong>Masa Atómica:</strong> ' + request.result.masaAtomica + '<br>';
-			html += '<strong>Valencia:</strong> ' + request.result.valencia + '<br>';
-			html += '<strong>Punto de Ebullición, ºC:</strong> ' + request.result.ebullicion + '<br>';
-			html += '<strong>Punto de Fusión, ºC:</strong> ' + request.result.fusion + '<br>';
-			html += '<strong>Densidad (g/ml):</strong> ' + request.result.densidad + '<br>';
-			html += '<strong>Configuración Electrónica:</strong> ' + request.result.confElectronica + '<br>';
-			html += '<strong>Grupo:</strong> ' + request.result.grupo + '<br>';
-			html += '<strong>Fecha de Descubrimiento:</strong> ' + request.result.descubrimiento + '<br>';
-			html += '<strong>Descubierto por:</strong> ' + request.result.descubridor + '<br>';
-			html += '<strong>Etimología:</strong> ' + request.result.etimologia + '<br>';
-			html += '</p>';
-			//var message = "Numero: " + request.result.numero + ", Nombre: " + request.result.nombre + ", Simbolo: " + request.result.simbolo;
-			document.getElementById("modal-content").innerHTML = html;
-		} else {
-			//alert("El elemento no pudo ser encontrado en la base de datos!");
-			var html = '"¡El elemento no pudo ser encontrado en la base de datos!"';
-			document.getElementById("modal-content").innerHTML = html;
-		}
-	};
-}
+  window.db = null;
+  window.elementos = [];
 
-function readAll() {
-	var objectStore = db.transaction(STORE).objectStore(STORE);
-	//Solo cuenta el número de elementos
-	var countRequest = objectStore.count();
-	countRequest.onsuccess = function() {
-		var length = countRequest.result;
-		console.log("Length: " + length);
-	}
-	objectStore.openCursor().onsuccess = function(event) {
-		var cursor = event.target.result;
-		if (cursor) {
-			alert("id " + cursor.key + ", Numero " + cursor.value.numero + ", Nombre: " + cursor.value.nombre + ", Simbolo: " + cursor.value.simbolo);
-			var message = "id " + cursor.key + ", Numero " + cursor.value.numero + ", Nombre: " + cursor.value.nombre + ", Simbolo: " + cursor.value.simbolo;
-			console.log(message);
-			cursor.continue();
-		} else {
-			alert("No hay más elementos!");
-		}
-	};
-}
+  // 1) Cargar el JSON primero. IMPORTANTE: no abrir la BD hasta tener los datos,
+  //    porque onupgradeneeded necesita el array para sembrar el store.
+  function fetchElementos() {
+    return new Promise(function (resolve, reject) {
+      // fetch existe en Chrome/Firefox modernos; fallback a XHR por robustez.
+      if (window.fetch) {
+        fetch("js/elements.json", { cache: "no-cache" })
+          .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+          .then(resolve).catch(reject);
+      } else {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "js/elements.json", true);
+        xhr.onload = function () {
+          if (xhr.status === 200) { try { resolve(JSON.parse(xhr.responseText)); } catch (e) { reject(e); } }
+          else reject(new Error("HTTP " + xhr.status));
+        };
+        xhr.onerror = function () { reject(new Error("Error de red")); };
+        xhr.send();
+      }
+    });
+  }
 
-function remove(id) {
-	var request = db.transaction([STORE], "readwrite").objectStore(STORE).delete(id);
-	request.onsuccess = function(event) {
-		alert("¡El elemento ha sido eliminado de la base de datos!");
-	}
-	request.onerror = function(event) {
-		alert("¡No existe el elemento que se desea eliminar!");
-	};
-}
+  function openDB(data) {
+    return new Promise(function (resolve, reject) {
+      var req;
+      try {
+        req = idb.open(DBNAME, VERSION);
+      } catch (e) {
+        // Firefox en modo privado lanza aquí.
+        return reject(e);
+      }
+
+      // Firefox dispara onblocked si otra pestaña tiene una versión anterior abierta.
+      req.onblocked = function () {
+        console.warn("IndexedDB bloqueada: cierra otras pestañas con la app abierta.");
+      };
+
+      req.onupgradeneeded = function (event) {
+        var database = event.target.result;
+        var tx = event.target.transaction; // usar la transacción de upgrade
+        var store;
+
+        if (!database.objectStoreNames.contains(STORE)) {
+          store = database.createObjectStore(STORE, { keyPath: "id" });
+          store.createIndex("numero",  "numero",  { unique: true });
+          store.createIndex("simbolo", "simbolo", { unique: true });
+          store.createIndex("grupo",   "grupo",   { unique: false });
+        } else {
+          store = tx.objectStore(STORE);
+        }
+
+        // Sembrar / actualizar dentro de la MISMA transacción de upgrade.
+        // put() en vez de add() para no fallar en re-siembras.
+        for (var i = 0; i < data.length; i++) store.put(data[i]);
+      };
+
+      req.onsuccess = function () {
+        var database=req.result;
+        var tx=database.transaction(STORE,"readwrite");
+        var store=tx.objectStore(STORE);
+        store.count().onsuccess=function(e){
+          if(e.target.result===0){
+            data.forEach(function(el){store.put(el);});
+          }
+        };
+        resolve(database);
+      };
+      req.onerror   = function () { reject(req.error); };
+    });
+  }
+
+  window.dbReady = fetchElementos()
+    .then(function (data) { window.elementos = data; return openDB(data); })
+    .then(function (database) {
+      window.db = database;
+      // Manejo de cambios de versión desde otra pestaña (Firefox lo aplica estrictamente).
+      database.onversionchange = function () { database.close(); alert("La BD fue actualizada. Recarga la página."); };
+      console.log("IndexedDB lista:", DBNAME, "v" + VERSION);
+      return database;
+    })
+    .catch(function (err) {
+      console.error("No se pudo inicializar IndexedDB:", err);
+      alert("No se pudo inicializar la base de datos.\nSi usas Firefox en modo privado, ábrelo en modo normal.");
+    });
+})();
